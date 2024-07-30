@@ -9,6 +9,7 @@
         <trackHistory>false</trackHistory>
         <type>Percent</type>
     </fields>
+    
     <fields>
         <fullName>Expiry_Date__c</fullName>
         <inlineHelpText>Indicates when the coupon will expire.</inlineHelpText>

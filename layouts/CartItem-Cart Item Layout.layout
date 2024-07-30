@@ -22,6 +22,7 @@
                 <behavior>Required</behavior>
                 <field>CreatedDate</field>
             </layoutItems>
+            
             <layoutItems>
                 <behavior>Required</behavior>
                 <field>Product2Id</field>

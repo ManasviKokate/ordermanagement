@@ -11,6 +11,7 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
+    
     <fields>
         <fullName>Parent_Category__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>

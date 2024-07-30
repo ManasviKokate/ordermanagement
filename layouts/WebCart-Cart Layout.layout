@@ -6,6 +6,7 @@
         <editHeading>true</editHeading>
         <label>Information</label>
         <layoutColumns>
+            
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>TotalProductLineItemCount</field>

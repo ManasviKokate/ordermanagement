@@ -11,6 +11,7 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
+    
     <fields>
         <fullName>Customer__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>

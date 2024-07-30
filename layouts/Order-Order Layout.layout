@@ -18,6 +18,7 @@
                 <behavior>Required</behavior>
                 <field>AccountId</field>
             </layoutItems>
+            
             <layoutItems>
                 <behavior>Required</behavior>
                 <field>EffectiveDate</field>

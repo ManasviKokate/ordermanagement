@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Billing_Address__c</fullName>
+        <inlineHelpText>Billing Address of the Order.</inlineHelpText>
+        <label>Billing Address</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Customer__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <inlineHelpText>The customer record under which order is created.</inlineHelpText>
+        <label>Customer</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Orders</relationshipLabel>
+        <relationshipName>Orders</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Delivered_Date__c</fullName>
+        <inlineHelpText>The date which the order has been delivered.</inlineHelpText>
+        <label>Delivered Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Expected_Delivery_Date__c</fullName>
+        <inlineHelpText>The expected delivery date of the order.</inlineHelpText>
+        <label>Expected Delivery Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Order_Date__c</fullName>
+        <inlineHelpText>Order date</inlineHelpText>
+        <label>Order Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Method__c</fullName>
+        <label>Payment Method</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>COD</fullName>
+                    <default>false</default>
+                    <label>COD</label>
+                </value>
+                <value>
+                    <fullName>Net Banking</fullName>
+                    <default>false</default>
+                    <label>Net Banking</label>
+                </value>
+                <value>
+                    <fullName>CC</fullName>
+                    <default>false</default>
+                    <label>CC</label>
+                </value>
+                <value>
+                    <fullName>Debit Card</fullName>
+                    <default>false</default>
+                    <label>Debit Card</label>
+                </value>
+                <value>
+                    <fullName>EMI</fullName>
+                    <default>false</default>
+                    <label>EMI</label>
+                </value>
+                <value>
+                    <fullName>Wallet</fullName>
+                    <default>false</default>
+                    <label>Wallet</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Payment_Status__c</fullName>
+        <inlineHelpText>Status of the Payment for the order.</inlineHelpText>
+        <label>Payment Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>PAID</fullName>
+                    <default>false</default>
+                    <label>PAID</label>
+                </value>
+                <value>
+                    <fullName>COD</fullName>
+                    <default>false</default>
+                    <label>COD</label>
+                </value>
+                <value>
+                    <fullName>Partially Paid</fullName>
+                    <default>false</default>
+                    <label>Partially Paid</label>
+                </value>
+                <value>
+                    <fullName>EMI</fullName>
+                    <default>false</default>
+                    <label>EMI</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Shipping_Address__c</fullName>
+        <inlineHelpText>Shipping Address of the Order</inlineHelpText>
+        <label>Shipping Address</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Open</fullName>
+                    <default>false</default>
+                    <label>Open</label>
+                </value>
+                <value>
+                    <fullName>In Process</fullName>
+                    <default>false</default>
+                    <label>In Process</label>
+                </value>
+                <value>
+                    <fullName>Dispatched</fullName>
+                    <default>false</default>
+                    <label>Dispatched</label>
+                </value>
+                <value>
+                    <fullName>Shipped</fullName>
+                    <default>false</default>
+                    <label>Shipped</label>
+                </value>
+                <value>
+                    <fullName>Out for Delivery</fullName>
+                    <default>false</default>
+                    <label>Out for Delivery</label>
+                </value>
+                <value>
+                    <fullName>Delivered</fullName>
+                    <default>false</default>
+                    <label>Delivered</label>
+                </value>
+                <value>
+                    <fullName>Closed</fullName>
+                    <default>false</default>
+                    <label>Closed</label>
+                </value>
+                <value>
+                    <fullName>Return Requested</fullName>
+                    <default>false</default>
+                    <label>Return Requested</label>
+                </value>
+                <value>
+                    <fullName>Returned</fullName>
+                    <default>false</default>
+                    <label>Returned</label>
+                </value>
+                <value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                    <label>Cancelled</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Total_Items__c</fullName>
+        <inlineHelpText>The order Quantity</inlineHelpText>
+        <label>Total Items</label>
+        <summarizedField>OrderItem.Quantity</summarizedField>
+        <summaryForeignKey>OrderItem.OrderId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total__c</fullName>
+        <inlineHelpText>Order Amount</inlineHelpText>
+        <label>Total</label>
+        <summarizedField>OrderItem.ListPrice</summarizedField>
+        <summaryForeignKey>OrderItem.OrderId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+</CustomObject>

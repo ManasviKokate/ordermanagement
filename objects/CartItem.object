@@ -9,6 +9,7 @@
         <scale>0</scale>
         <type>Currency</type>
     </fields>
+
     
     <fields>
         <fullName>List_Price__c</fullName>
